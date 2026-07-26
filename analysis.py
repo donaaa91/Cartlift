@@ -1,22 +1,4 @@
-"""
-CartLift: Checkout Redesign A/B Test — Analysis Pipeline
-===========================================================
 
-Five checks, run in order, each answering a different question a
-stakeholder would ask before trusting an A/B test result:
-
-  1. Randomization health check   -> "Is the experiment even valid?"
-  2. Naive headline               -> "What would I have reported blindly?"
-  3. Segmented analysis           -> "What's the real effect?"
-  4. Power analysis               -> "Is a null result truly null, or just underpowered?"
-  5. Page load regression check   -> "Did the redesign cost us anything?"
-
-Usage:
-    python analysis.py
-    python analysis.py --data data/checkout_sessions.csv --mde 0.015 --alpha 0.05
-
-Requires data/checkout_sessions.csv (generate via `python simulate_data.py`).
-"""
 
 import argparse
 import os
