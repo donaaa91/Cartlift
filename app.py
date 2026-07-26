@@ -1,10 +1,3 @@
-"""
-CartLift: Checkout Redesign A/B Test — Dashboard
-==================================================
-Run: streamlit run app.py
-
-Requires data/checkout_sessions.csv (generate via `python simulate_data.py`).
-"""
 
 import os
 
