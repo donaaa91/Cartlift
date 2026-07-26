@@ -1,0 +1,5 @@
+device,user_type,n_per_arm,achieved_power,adequately_powered
+desktop,new,3669,0.6774583593940909,False
+desktop,returning,5150,0.7051109486532924,False
+mobile,new,4191,0.7661346060680765,False
+mobile,returning,6078,0.8208635439888011,True
