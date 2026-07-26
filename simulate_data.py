@@ -1,27 +1,3 @@
-"""
-CartLift: Checkout Redesign A/B Test — Data Simulator
-=======================================================
-
-Generates a SYNTHETIC dataset of ~42,000 checkout sessions over 21 days,
-engineered to reproduce a specific real-world failure mode: a mobile app
-that ships the treatment flag a few days early, causing a sample-ratio
-mismatch (mobile + new users become over-represented in treatment).
-
-The true effect is baked in on purpose:
-  - Mobile users get a genuine conversion lift from the redesign.
-  - Desktop users get ~no true effect.
-  - Treatment is genuinely slower to load (real page-load regression).
-
-This lets `analysis.py` be checked against a known ground truth rather
-than an unverifiable real dataset.
-
-Usage:
-    python simulate_data.py
-    python simulate_data.py --seed 7 --out data/checkout_sessions.csv
-
-Output:
-    data/checkout_sessions.csv
-"""
 
 import argparse
 import sys
